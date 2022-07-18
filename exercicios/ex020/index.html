@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudos</title>
+    <style>
+        body{
+            font:normal 1em Arial, Helvetica, sans-serif;
+        }
+        a{
+            font-weight: bold;
+            text-decoration: none;
+            color: rgb(139, 3, 117);
+        }
+        a:visited{
+            color:rgb(159, 40, 189);
+        }
+        .especial:hover{
+            text-decoration: none;
+            background-color: black;
+            color: white;
+        }
+        .especial::before{
+            content: '>>';
+            font-weight: lighter;
+        }
+        .especial::after{
+            content: '<<';
+            font-weight: lighter;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <h1>Personalizando um link</h1>
+    <p> <li> Para aprender HTML5 E CSS3 o <a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf">GitHub do Guanabara</li></a>
+    </p>
+    <p> <li> Se quiser conhecer mais sobre os padroes, visite o site do <a href="https://www.w3c.br">Escritorio do W3C no Brasil</li></a>
+    </p>
+    <p> <li> Para acompanhar os cursos, acesse o <a href="https://www.youtube.com/cursoemvideo/" class="especial">Canal do Curso em Video</li></a>
+    </p>
+    </ul>
+    
+</body>
+</html>
